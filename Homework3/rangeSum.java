@@ -1,21 +1,19 @@
-/*
-Introduccion a la computacion y programacion 1 seccion B
-Laboratorio, algoritmos en java
+public class rangeSum{
 
-Complete el algoritmo:
-Dados 2 numeros (limite inferior y superior), recorra el rango e imprima los numeros dentro de este rango.
-
-*/
-
-public class rangeSum {   
-
-   public static void main(String[] args) {
-
-		System.out.println("limites: "+args[0]+" "+args[1]);
-
-      
-         System.out.println("numero actual es:" );
-      
-   }
-
+	public static void main(String[] args){
+		System.out.println("Numeros de un rango");
+		int numero1=0, numero2=0;
+		numero1 = Integer.parseInt(args[0].toString());
+		numero2 = Integer.parseInt(args[1].toString());
+		if(numero1 > numero2){
+			for(int x=numero2;x<=numero1;x++){
+				System.out.println(x);
+			}
+		}else{
+			for(int x=numero1;x<=numero2;x++){
+				System.out.println(x);
+			}
+		}
+		System.out.println("------------------------------");
+	}
 }

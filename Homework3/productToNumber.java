@@ -1,26 +1,14 @@
-/*
-Introduccion a la computacion y programacion 1 seccion B
-Laboratorio, algoritmos en java
+public class productToNumber{
 
-Complete el algoritmo:
-
-Despliege la multiplicacion desde 0 hasta un valor 'n' dado.
-Ej:
-Si si ingresa 6
-mostrar
-1x2x3x4x5x6=720
-
-*/
-
-public class productToNumber {   
-
-   public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
-
-
-   		System.out.println("el producto es: "+resultado);
-      
-   }
-
+	public static void main(String[] args){
+		System.out.println("Producto hasta un numero");
+		int numero=0;
+		int resultado=1;
+		numero = Integer.parseInt(args[0].toString());
+		for(int x=0;x<numero;x++){
+			resultado = resultado + (x*resultado);
+		}
+		System.out.println("La multiplicacion hasta el numero es: " + resultado);
+		System.out.println("---------------------------------------");
+	}
 }

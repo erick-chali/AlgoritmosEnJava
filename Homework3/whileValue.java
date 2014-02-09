@@ -1,4 +1,4 @@
-public class zeroToLimit {   
+public class whileValue {   
 
    public static void main(String[] args) {
       int valorLimite = 0, x=0;
